@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Weekly project 3</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+</head>
+
+<body>
+    <header id="first">
+        <form action="/" method="GET">
+            <section class="head">
+                <input id="search" type="search" name="psaxe" placeholder="      search" />
+                <input id="bt" type="submit" name="search" value="Search" />
+            </section>
+            <section class="head">
+                <input id="d1" type="date" name="checkin" />
+                <input id="d2" type="date" name="checkout" />
+                <select id="d3" name="room">
+                    <option value="1">Single</option>
+                    <option value="2">Double</option>
+                    <option value="3">Family rooms</option>
+                </select>
+            </section>
+            <span id="currentpr"></span>
+            <section class="head">
+                <label id="lb1" for="price" style="color:white"><b>Price</b></label>
+                <input id="p1" type="range" name="price" min="0" max="1000" step="1" value="0">
+                <label for="Property" style="color:white"><b>Property type:</b></label>
+                <select id="p2" name="Property">
+                    <option value="0">All</option>
+                    <option value="1">1 star</option>
+                    <option value="2">2 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="5">5 stars</option>
+                </select>
+                <label for="rating" style="color:white"><b>Guest rating:</b></label>
+                <select id="p3" name="rating">
+                    <option value="1">0-2 okay</option>
+                    <option value="2">2-6 fair</option>
+                    <option value="3">6-7 good</option>
+                    <option value="4">7-8.5 very good</option>
+                    <option value="1">8.5-10 excellent</option>
+                </select>
+                <label for="loc" style="color:white"><b>Hotel locations:</b></label>
+                <select id="p4" name="loc">
+                    <option value="1">Location 1</option>
+                    <option value="2">Location 2</option>
+                    <option value="3">Location 3</option>
+                    <option value="4">Location 4</option>
+                    <option value="5">Location 5</option>
+                </select>
+                <label for="filters" style="color:white"><b>More filters:</b></label>
+
+                <select id="p5" name="filters">
+                    <option value="1">Filter 1</option>
+                    <option value="2">Filter 2</option>
+                    <option value="3">Filter 3</option>
+                    <option value="4">Filter 4</option>
+                    <option value="5">Filter 5</option>
+                </select>
+            </section>
+        </form>
+    </header>
+    <form id="fourth">
+        <img class="map" src="https://images.indianexpress.com/2017/05/google-maps-759.jpg" alt="map" />
+        <input id="bt2" type="button" name="view-map" value="View Map" />
+        <label class="sort" for="recommendations"><b>Sort by</b></label>
+        <select class="sort" name="recommendations" aria-placeholder="Our recommendations">
+            <option value="1">This</option>
+            <option value="2">that</option>
+        </select>
+    </form>
+
+    <section class="rooms">
+        <section class="hotels">
+            <img class="images" src="https://s-ec.bstatic.com/images/hotel/max1024x768/731/73118462.jpg" alt="room1" />
+            <pre class="ratings"><input type="button" id="slide1" value="prev"><input type="button" id="slide2" value="next"><input type="button" id="love" value=" "><b class="title1" style="font-size: 150%">Hotel Lancaster</b><br><img class="star" src="rating.png"/><img class="star" src="rating.png"/><img class="star" src="rating.png"/><img class="star" src="rating.png"/><img class="star" src="rating.png"/> Hotel<br><br><b><span class="bgreen">8.8</span> Excellent</b>(1736 reviews)<br><br>Excellent location (9.2/10)</pre>
+            <pre class="sites"><br><a class="recommend" id="rec1" href="">Hotel website<br>$706</a><br><a class="recommend" id="rec2" href="">Agoda<br>$575</a><br><a class="recommend" id="rec3" href="">Travelocity<br>$708</a><br><hr><a id="rec4" href=""><b>More deals from<br>$575</b><img id="arrow" src="downarrow.png"/></a></pre>
+            <pre class="deal"><span class="green"><p id="x"></p></span><input class="viewdeal" id="viewdeal1" type="button" name="do" value="View Deal"/><img id="warrow1" src="white-arrow.png"></pre>
+        </section>
+
+        <section class="hotels">
+            <img class="images" src="https://texasstation.sclv.com/~/media/Images/Page-Background-Images/Texas/TS_Hotel_King_lowrez.jpg?h=630&la=en&w=1080"
+                alt="room2" />
+            <pre class="ratings"><input type="button" id="slide3" value="prev"><input type="button" id="slide4" value="next"><input type="button" id="love1" value=" "><b class="title1" style="font-size:150%">Prince de Galles,</b><br><b style="font-size:150%">a luxury...</b><br><img class="star" src="rating.png"/><img class="star" src="rating.png"/><img class="star" src="rating.png"/><img class="star" src="rating.png"/><img class="star" src="rating.png"/> Hotel<br><br><b><span class="bgreen">9.0</span> Excellent</b>(473 reviews)<br><br>Excellent location (9.4/10)</pre>
+            <pre class="sites"><br><a class="recommend" id="rec5" href="">Orbitz<br>$1.213</a><br><a class="recommend" id="rec6" href="">Trip.com<br>$1.249</a><br><a class="recommend" id="rec7" href="">Expedia<br>$1.213</a><br><hr><a class="recommend" id="rec8" href=""><b>More deals from<br>$1.213</b><img id="arrow" src="downarrow.png"/></a></pre>
+            <pre class="deal"><span style="color:red">HotelPower.com</span><br><b><span id="sale">$1.568</span></b><br><span class="green" id="y">Travelocity<br><b>$1.213</b></span><br>3 nights for <b><span class="green">$3.638</span></b><br><br><span id="break"><b>   Free  breakfast   </b></span><br><br><input class="viewdeal" id="viewdeal2" type="button" name="do" value="View Deal"/><img id="warrow2" src="white-arrow.png"></pre>
+        </section>
+
+    </section>
+    <div style="background-color:lightgrey; overflow:auto;"><br><br><br><br><br><br><br><br><br><br><br></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
